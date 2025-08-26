@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IntellectPharmacy" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- 默认按钮样式 -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#E6FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:foreground">@null</item>
+    </style>
+
+    <!-- 直角按钮样式 -->
+    <style name="RectButtonStyle" parent="ButtonStyle">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/button_rect_selector</item>
+    </style>
+
+    <!-- 默认文本框样式 -->
+    <style name="EditTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">#A4A4A4</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="FragmentButtonStyle">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/shape_bg_blue</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

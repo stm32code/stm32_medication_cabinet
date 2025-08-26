@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context=".Fragment.UserFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/userbackgroune"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/headimage" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="用户名称"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/linearlayout_001"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="更多服务"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/backLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="-18dp"
+                android:background="@mipmap/setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=">"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
